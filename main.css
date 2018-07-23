@@ -12,33 +12,37 @@ body {
   margin-bottom: 0;
 }
 
+.name{
+font-size: 1.5em;
+display: none
+
+}
+
 nav {
   height: 8%;
-  background-color: #e9ecef;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  text-decoration: none;
-  height: 100%;
-}
-
-nav a {
-  color: black;
-  padding-right: 20px;
+  background-color: #212529;
+  border:1px solid black;
+  display:flex;
+  align-items: center
 }
 
 .nav-links {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  
+  
 }
+
+.nav-links > * {
+  margin: 10px;
+  width: 110px;
+  border-radius: 100px
+}
+
+
 
 .footer-container {
   display: flex;
@@ -48,10 +52,14 @@ nav a {
   height: 20vh;
 }
 
+.footer-container > * {
+  margin-bottom: 20px;
+}
+
 .footer-links {
   display: flex;
   justify-content: space-between;
-  width: 30%;
+  width: 40%;
 }
 
 .icons {
@@ -60,7 +68,8 @@ nav a {
 
 .img-me {
   border-radius: 100px;
-  width: 300px;
+  width: 20%;
+  height: 20%;
 }
 
 .intro {
@@ -87,15 +96,18 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 90%;
-  padding: 20px;
   background-color: #e9ecef;
+  padding: 15px;
 }
 
 .skills {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 90%;
+  padding: ;
 }
 
 .skills > * {
@@ -105,6 +117,7 @@ nav a {
 }
 
 .typewriter h1 {
+  width: 70%;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid orange;
