@@ -29,3 +29,10 @@ $(window).on("load", function() {
     $(".typewriter").removeClass("typewriter");
   }
 });
+
+$(window).on("resize", function() {
+  var viewportWidth = $(window).width();
+  if (viewportWidth < 1200) {
+    $(".typewriter").removeClass("typewriter");
+  }
+});
