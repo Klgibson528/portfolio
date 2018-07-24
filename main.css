@@ -1,7 +1,18 @@
-body {
-  background-image: url("background-min.jpg");
+body { 
+  background: url("background-min.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
+
+/* body {
+  background-image: url("");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
 
 .wrapper {
   background-color: rgba(255, 255, 255, 0.9);
@@ -31,11 +42,10 @@ nav {
   justify-content: center;
   height: 100%;
   width: 100%;
-  
 }
 
 .nav-links > * {
-  display:flex;
+  display: flex;
   align-items: center;
   margin: 10px;
   width: 110px;
@@ -82,8 +92,7 @@ nav {
 
 .more-info {
   padding: 30px;
-  display:none;
-  
+  display: none;
 }
 
 .expect {
@@ -154,8 +163,6 @@ nav {
     border-color: orange;
   }
 }
-
-
 
 .box {
   display: flex;
