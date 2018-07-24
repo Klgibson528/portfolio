@@ -10,6 +10,8 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
     crossorigin="anonymous"> ￼
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   <title>
     Katherine Gibson's Portfolio
   </title>
@@ -18,25 +20,24 @@
 <body>
   <img src="background-min.jpg" style="display:none;">
   <div class="container wrapper">
-    <nav class="fixed-top">
+    <nav class="fixed-top container">
       <div class="nav-links">
-        <button href="www.google.com" class="text-center">
-          Contact me
-        </button>
-        <button href="#About" class="text-center">
-          About
-        </button>
-        <button href="#Skills" class="text-center">
-          Skills
-        </button>
-        <button href="#Portfolio" class="text-center">
-          Portfolio
-        </button>
+
+        <a class="btn btn-secondary" href="#About" role="button">About</a>
+
+
+        <a class="btn btn-secondary" href="#Portfolio" role="button">Portfolio</a>
+
+
+        <a class="btn btn-secondary" href="#Skills" role="button">Skills</a>
+
+        <a class="btn btn-secondary" href="#Contact" role="button">Contact Me</a>
+
       </div>
     </nav>
     <div>
       <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron margin">
+      <div id="About" class="jumbotron margin">
         <div class="container ">
           <div class="intro typewriter">
             <h1 class="display-3">Hello, world! I'm Katy.</h1>
@@ -47,12 +48,36 @@
               from Houston, TX to the Alexandria, VA/Washington D.C. area. I am pursuing an entry-level position where I
               can develop my skills and learn from experienced team members. I have strong team leadership skills, a determination
               for learning, and a passion for efficiency.</h4>
+            <input type="button" id="btn-more-info" onclick="ShowDiv()" value="Read more about me">
+          </div>
+          <div id="more-info" class="more-info">
+            <h5>My work as a high school science teacher has led me to be an active, engaged learner and a patient, meticulous
+              worker. While employed, I quickly advanced to leadership positions because of my determination for self-improvement
+              and the ability to successfully collaborate with team members. While working as a teacher, I found myself looking
+              for more efficient ways to access resources for my students and for effective tools for my fellow teachers.
+              When I had the realization that I could CREATE these through the power of software development my decision
+              became clear. I left this career path with many valuable skills learned and an excitement to peruse a career
+              in software development.</h5>
+
+            <h5>My journey into software development began with online tools like freeCodeCamp and Udemy where I was introduced
+              to languages such as Python, JavaScript, HTML, and CSS. However, I quickly realized I wanted the ability to
+              collaborate with other learners. After joining various online dev communities I decided to take the plunge
+              and enroll in the DigitalCrafts coding boot camp. I have since added many more tools to my repertoires such
+              as React, Express, and SQL databases while continuing to strengthen my previously mentioned skills. </h5>
+
+            <h5>I have had many opportunities to work on interesting projects by myself and with my peers. For my first major
+              project, I developed a text-based RPG written in Python which expanded my knowledge of classes and proper coding
+              structure. While learning JavaScript and a Python library called tornado I had the opportunity to work on and
+              manage a team of 5 to create a mock website for a pet grooming company. Since then I have developed a simple
+              RGB guessing game, a trivia game built with a React front-end and an Express backend, and most recently a to-do
+              app which required authentication and the ability for multiple users to contribute. All of these can be found
+              on my GitHub at https://github.com/Klgibson528. </h5>
           </div>
         </div>
       </div>
     </div>
     <div class="container">
-      <div>
+      <div id="Portfolio">
         <h1 class="text-center margin">What You Can Expect From Me</h1>
       </div>
       <!-- Example row of columns -->
@@ -135,7 +160,7 @@
         </div>
       </div>
     </div>
-    <div class="expect">
+    <div id="Skills" class="expect">
       <div class="skills-box">
         <h2>Skills</h2>
 
@@ -174,7 +199,7 @@
       </div>
     </div>
 
-    <footer>
+    <footer id="Contact">
       <div class="footer-container">
         <h2>Contact Me</h2>
         <div class="footer-links">

@@ -12,18 +12,17 @@ body {
   margin-bottom: 0;
 }
 
-.name{
-font-size: 1.5em;
-display: none
-
+.name {
+  font-size: 1.5em;
+  display: none;
 }
 
 nav {
   height: 8%;
   background-color: #212529;
-  border:1px solid black;
-  display:flex;
-  align-items: center
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
 }
 
 .nav-links {
@@ -33,16 +32,15 @@ nav {
   height: 100%;
   width: 100%;
   
-  
 }
 
 .nav-links > * {
+  display:flex;
+  align-items: center;
   margin: 10px;
   width: 110px;
-  border-radius: 100px
+  border-radius: 100px;
 }
-
-
 
 .footer-container {
   display: flex;
@@ -82,6 +80,12 @@ nav {
   padding: 30px;
 }
 
+.more-info {
+  padding: 30px;
+  display:none;
+  
+}
+
 .expect {
   display: flex;
   flex-direction: column;
@@ -107,7 +111,6 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
   width: 90%;
-  padding: ;
 }
 
 .skills > * {
@@ -152,6 +155,8 @@ nav {
   }
 }
 
+
+
 .box {
   display: flex;
   flex-direction: column;
@@ -188,6 +193,7 @@ nav {
 }
 
 .margin {
+  margin-top: 30px;
   margin-bottom: 50px;
 }
 
