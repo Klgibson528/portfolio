@@ -208,3 +208,7 @@ img {
   height: 70%;
   width: 100%;
 }
+
+.working {
+  background-color: #e9ecef;
+}
